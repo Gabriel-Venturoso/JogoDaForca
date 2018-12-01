@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="assets/JS/start.js" defer></script>
+    <script src="assets/JS/verify.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da forca</h1>
+    </header>
+    <div class="letters"> </div>
+    <footer>
+        <section class="getLetter">
+            <label for="letter">Digite apenas uma letra</label>
+            <input type="text" name="letter" id="letter" maxlength="1" >
+            <button id="submitLetter">OK</button>
+            <span class="error hideDisplay" id="input-error">Digite conforme o padrão</span>
+            <span class="error hideDisplay" id="already-error">Você já perguntou essa letra</span>
+        </section>
+        <p class="used-letters"></p>
+        <h2 class="live">Vidas: 
+            <i class="fas fa-heart" id="first-live"></i>
+            <i class="fas fa-heart lives"></i>
+            <i class="fas fa-heart lives"></i>
+            <i class="fas fa-heart lives"></i>
+            <i class="fas fa-heart lives"></i>
+        </h2>
+    </footer>
+    <div class="popUp">
+        <section class="popUpSection">
+            <label for="word">Digite uma palavra para começar o jogo</label>
+            <input type="text" name="word" id="word" placeholder="digite letras sem acento ou espaços">
+            <button id="submitWord">Começar</button>
+            <span class="error hide">Digite conforme o padrão</span>
+        </section>
+        <p class="hide"></p>
+    </div>
+</body>
+</html>
